@@ -1,0 +1,24 @@
+<section class="base"  >
+    <ng-template dynamicChildLoader="" ></ng-template>
+    <!-- <app-windows [show]="show" [WindowTitle]="WindowTitle" (emitClose)="closeWindow($event)"></app-windows> -->
+    <app-application [obj]="oba"  [WindowTitle]="WindowTitle" (emitData)="getData($event)"></app-application>
+  <section class="bar">
+    <div class="start">
+      <img src="../assets/img/start.png" alt="">
+    </div>
+    <div class="search">
+      <div ></div>
+      <input type="text" placeholder="Type Here to Search">
+    </div>
+    <ul class="icon-list">
+      <li><span></span></li>
+      <app-taskbar-icon [obj]="obc" [WindowTitle]="WindowTitle" (emitData)="getData($event)"></app-taskbar-icon>
+    </ul>
+    <div class="data">
+      <div class="hour">{{clock}}</div>
+      <div class="date">{{date}}</div>
+    </div>
+  </section>
+</section>
+
+<router-outlet></router-outlet>

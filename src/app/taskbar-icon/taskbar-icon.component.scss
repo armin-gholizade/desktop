@@ -1,0 +1,31 @@
+.cover{
+    background:rgba(11, 161, 161, 0.568);
+}
+.icon-list{
+    display: inline-flex;
+    list-style: none;
+    // border: 1px solid black;
+    margin-left: 10px;
+}
+.icon-list>li{
+    width: 50px;
+    height: 100%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.icon-list>li>span{
+    display: flex;
+    width: 39%;
+    height: 43%;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px white;
+}
+.icon-list>li>img{
+    width: 63%;
+    height: 75%;
+}

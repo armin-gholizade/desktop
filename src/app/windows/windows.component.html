@@ -1,0 +1,13 @@
+<section class="base" cdkDrag (click)="postionTop(index)"  [ngClass]="{'ADDzindex':finalZindex==index }">
+    <section id="window" class="window"*ngIf="show"  >
+        <header class="head" cdkDragHandle>
+          <p class="title">{{WindowTitle}}</p>
+          <div class="close" (click)="close()">x</div>
+        </header>
+        <section id="box" class="box example-boundary" (mousedown)="clDown($event)" >
+            <div *ngFor="let item of list">
+                <app-folders  [txt]="item.name" (emitBind)="getData($event)" [bind]="bind"></app-folders>    
+            </div>
+        </section>
+    </section>
+</section>

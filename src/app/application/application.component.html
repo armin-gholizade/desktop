@@ -1,0 +1,6 @@
+<section *ngFor="let item of obj">
+    <section class="icon" (click)="setCover(item.appName)" [ngClass]="{'cover':curentIcon==item.appName} " cdkDrag>
+        <img src={{item.imgSrc}} alt="">
+        <p>{{item.appName}}</p>
+    </section>
+</section>

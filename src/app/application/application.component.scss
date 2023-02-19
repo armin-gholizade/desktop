@@ -1,0 +1,26 @@
+.icon{
+    width: 64px;
+    height: 68px;
+    // border: 1px solid black;
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon>img{
+    width: 80%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+}
+.icon>p{
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+.cover{
+    background:rgba(11, 161, 161, 0.568);
+}
